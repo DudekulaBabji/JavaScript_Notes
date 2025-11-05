@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <form onsubmit="return display()">
+        <label>FirstName</label>
+        <span style="color: red;">*</span>
+        <input type="text" id="fname"  />
+        <span id="fmsg" style="color: red;"></span><br><br>
+        <label>LastName</label>
+        <span style="color: red;">*</span>
+        <input type="text" id="lname"/>
+        <span id="lmsg" style="color: red;"></span><br><br>
+        <label>PhoneNumber</label>
+        <span style="color: red;">*</span>
+        <input type="tel" id="num"/>
+        <span id="pmsg" style="color: red;"></span><br><br>
+
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>

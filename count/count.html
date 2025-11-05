@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+     .btn {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .increase { background-color: #4CAF50; color: white; }
+    .decrease { background-color: #f44336; color: white; }
+    .reset { background-color: #555; color: white; }
+    </style>
+    <script src="count.js"></script>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <button class="btn increase" onclick="positive()">+</button>
+    <button class="btn reset" onclick="reset()">Reset</button>
+    <button class="btn decrease" onclick="negative()">-</button>
+</body>
+</html>
