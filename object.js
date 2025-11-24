@@ -39,14 +39,14 @@ console.log(obj)
 
 //5)how to fetch an elements individually
 var obj={
-    name:"babi",
+    name:"babji",
     age:23
 }
 console.log(obj.name) 
 
 //6)for invoking the elements for using this keyword
 var obj={
-    name:"Bbaji",
+    name:"Baji",
     age:23
 }
 function info(){

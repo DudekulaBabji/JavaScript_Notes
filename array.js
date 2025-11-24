@@ -1,5 +1,9 @@
 //array
-
+//array is a collection of items stored at contiguous memory locations.
+//it is an data structure
+//it is an object
+//it is an iterable
+//it is an indexed
 var ar=[1,2,3,4]
 console.log(ar)
 
@@ -23,7 +27,7 @@ var ar=[1,2,3,4,5]
 ar.unshift(6,8)
 console.log(ar)
 
-//for placing the elements in middle we use index it remove that elemet 
+//for placing the elements in middle we use index it remove that element and add new element
 ar[2]=77     
 console.log(ar)
 
@@ -39,7 +43,7 @@ console.log(ar)
 //this method removes the last element from the array
 var ar=[1,2,3,4,5]
 ar.pop()
-console.log(ar)
+console.log(ar) 
 
 //5)shift
 //this method removes the first element from the array

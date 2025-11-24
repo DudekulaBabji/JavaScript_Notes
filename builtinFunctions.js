@@ -14,7 +14,7 @@ if(a<b){
     confirm("B is greather")
 }
 
-//3)
+//3)prompt
 //it take input from user
 //num are connected as string
 

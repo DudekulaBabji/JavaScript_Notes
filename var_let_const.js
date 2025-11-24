@@ -29,7 +29,7 @@ var a = 10;
 
 //2)let
 //let introduced in ES6 - use it for most cases
-//if any varaible is diclaring with ins scope it access only inside the scope 
+//if any varaible is diclaring with inside scope it access only inside the scope 
 //it modify
 
 //example for let

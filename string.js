@@ -57,12 +57,12 @@ var s1="this is string"
 console.log(s1.replace("is","IS"))
 
 //6)replaceAll
-it give undefined 
+//it give undefined 
 var s1="this is string"
 console.log(s1.replaceAll("is"))
 
 //7)repeat()
-if any sting or any character we need to repeat we use repeat
+//if any sting or any character we need to repeat we use repeat
 var s1="babji"
 console.log(s1.repeat(2))
 
