@@ -12,23 +12,23 @@
 
 //3)how it works
 //A promise has three states
-    //1)pending - inital state (operation not finished)
-    //2)fulfilled (resolved ) - operation completed successfully
-    //3)Rejected - operation failed
+    //1)pending - inital state (task not finished)
+    //2)fulfilled (resolved ) - task completed successfully
+    //3)Rejected - task failed
 
 //Example 1 ):
 
-// const myPromise = new Promise((reslove, reject)=>{
-//     let add= 6
-//     if(add>2){
-//         reslove("6 greather")
-//     }else{
-//         reject("not greather")
-//     }
-// })
-// myPromise
-// .then(result => console.log(result))  
-// .catch(error =>console.log(error))
+const myPromise = new Promise((reslove, reject)=>{
+    let add= 6
+    if(add>2){
+        reslove("6 greather")
+    }else{
+        reject("not greather")
+    }
+})
+myPromise
+.then(result => console.log(result))  
+.catch(error =>console.log(error))
 
 //.then() method is called when promise resolves successfully
 //the call back function inside .then() receives whatever value was passed to reslove()
@@ -37,22 +37,38 @@
 //example 2):
 //Asynchronous Example with setTimeout
 
-// const fetchData = new Promise((resolve, reject) => {
-//   console.log("Fetching data...");
-//   setTimeout(() => {
-//     resolve("Data fetched successfully!");
-//   }, 2000);
-// });
+const fetchData = new Promise((resolve, reject) => {
+  console.log("Fetching data...");
+  setTimeout(() => {
+    resolve("Data fetched successfully!");
+  }, 2000);
+});
 
-// fetchData
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
+fetchData
+  .then(data => console.log(data))
+  .catch(err => console.log(err));
 
 
 //Promise chaining
 
 //using multiple .then() methods one after another
 //where each .then() runs after the previous one finishes
+
+
+function step1() {
+  return Promise.resolve("Step 1 done");
+}
+
+function step2() {
+  return Promise.resolve("Step 2 done");
+}
+
+step1()
+  .then(res => {
+    console.log(res);
+    return step2();
+  })
+  .then(res => console.log(res));
 
 
 //simple example

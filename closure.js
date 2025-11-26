@@ -1,5 +1,5 @@
 //closure
-//a function binds together with it lexical envirment
+//a function binds together with it lexical environment
 //function along with lexical scope bundle together forms a closure
 //this enables a js programmer to use parent functions inside child function
 function x(){

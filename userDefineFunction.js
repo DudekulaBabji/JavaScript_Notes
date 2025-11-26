@@ -1,4 +1,4 @@
-//1)Function declearation & function statement
+//1)Function declaration & function statement
 //creating function with function keyword
 function name(){
     alert("hi")
@@ -24,6 +24,7 @@ display(5,8)
 //3)Arrow Functiong
 //Arrow func introduced in ES6 version
 //An arrow function is a shorter synatax for writing functions 
+//without giving function keyword
 
 var display=(a,b)=>a*b 
 var res= display(5,8)
@@ -46,7 +47,7 @@ console.log(res)
 //functions are treated like any other variable
 //store a function in a variable
 //pass a function as an argument to another function
-const b= function(param1){
+const b = function(param1){
     return function xyz(){
     }
 }

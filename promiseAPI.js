@@ -76,7 +76,7 @@ Promise.race([p1,p2,p3])
 //it ignores rejections- it only cares about the first successful promise
 //if all promises reject it shows and AggregateError
 //AggregateError - special error containing all rejection reason
-//first di fail iethy 2nd di chupistadi leda first dey
+//first di fail iethy 2nd di chupistadi leda first de
 const p1= new Promise((_,reject)=>{
     setTimeout(() => {
         reject(10)

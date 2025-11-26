@@ -1,7 +1,7 @@
 //fetch
 //fetch is a promise it gives responsive object
 //response object has a body which is readble stream
-//converting the readble into jason
+//converting the readble into json
 
 const API_URL = "https://api.github.com/users/DudekulaBabji"
 

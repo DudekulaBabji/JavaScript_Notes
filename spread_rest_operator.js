@@ -6,6 +6,11 @@ const arr1 = [1,2,3]
 const arr2=[...arr1] // copies arr1
 console.log(arr2)  //[1,2,3]
 
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2];
+console.log(combined); // [1, 2, 3, 4, 5, 6]
+
 //2)example 
 //It’s also used to pass array elements as individual arguments.
 
@@ -15,6 +20,8 @@ function add(a,b,c){
 
 const nums=[1,2,3]
 console.log(add(...nums)) //6
+
+
 
 //Rest operator
 //allows you to collect multiple values (arguments, array items, object) into a single variable
@@ -34,11 +41,11 @@ console.log(details); // { age: 22, city: "Hyderabad" }
 
 
 
-// Difference Between Spread     and                 Rest
-// Feature	Spread Operator (...)	         Rest Operator (...)
-// Purpose	Expands elements	             Collects elements
-// Used in	Function calls, arrays, objects	 Function parameters, destructuring
-// Example	sum(...arr)	                     function sum(...nums)
+// Difference Between   Spread     and                 Rest
+// Feature	      Spread Operator (...)	            Rest Operator (...)
+// Purpose	      Expands elements	                Collects elements
+// Used in	      Function calls, arrays, objects	 Function parameters, destructuring
+// Example	      sum(...arr)	                     function sum(...nums)
 
 
 //example to compare both

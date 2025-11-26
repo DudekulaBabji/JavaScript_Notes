@@ -28,3 +28,6 @@ function display() {
     
     
 }
+
+//return false - to stop form from submitting
+// /^[A-Za-z]+$/ - it is regular expression

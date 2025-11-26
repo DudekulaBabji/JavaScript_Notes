@@ -1,7 +1,12 @@
 //1)var 
+//var is keyword to declare a variable
+//funtion or global 
 // var is old way used before ES6 to declare variable
 //if any variable is give in scope or without scope it will execute
 //not modify
+//redeclaration accurs
+//reassignment allowed
+//accessing before declaration - undefined
 
 //example for var
 var name = "Babji";
@@ -31,6 +36,9 @@ var a = 10;
 //let introduced in ES6 - use it for most cases
 //if any varaible is diclaring with inside scope it access only inside the scope 
 //it modify
+//no redeclaration
+//reassignment allowed
+//accessing before declaration - ReferenceError
 
 //example for let
 let city = "Hyderabad";
@@ -57,6 +65,9 @@ let num = 5;
 //const introduced in ES6- use it when the variable value should not change
 //if any variable is disclered  by using const it is not accesable outside scope 
 //it is not modified
+//no redeclaration 
+//no reassignment 
+//accessing before declaration - reference Error
 
 //example
 const country = "India";

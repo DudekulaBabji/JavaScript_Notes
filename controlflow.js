@@ -35,6 +35,7 @@ else{
 
 //4)switch
 // A switch statement can replace multiple if checks
+// The switch statement is used to execute one block of code among many based on the value of an expression.
 var color="yellow"
 switch (color) {
     case "blue":
@@ -43,6 +44,8 @@ switch (color) {
     case "yellow":
         console.log("yellow choose")
         break;
+    default:
+      //code to execute if no case match
 }
 
 //Looping controll

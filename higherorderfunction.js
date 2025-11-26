@@ -1,37 +1,31 @@
 //Higher order function
 //a function which takes another function as an argument or a returns a function from it is known as hof
 
-function x(){
-    console.log("namaste")
+
+
+
+//example
+//Takes a function as argument
+
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();   // calling the callback function
 }
 
-function y(x) {
-    x()
-    
+function sayBye() {
+  console.log("Goodbye!");
 }
 
-const radius =[3,4,5,6,7]
+greet("Babji", sayBye);
 
-const area = function (radius){
-    return Math.PI * radius * radius;
-}
-const circumference= function(radius){
-    return 2 * Math.PI * radius
-}
+//example
+//Higher Order Function Returns a Function
 
-const diameter= function(radius){
-    return 2 * radius;
+function multiply(x) {
+  return function (y) {
+    return x * y;
+  };
 }
 
-const calculate = function(radius, logic) {
-    const output =[]
-    for (let i = 0; i < radius.length; i++) {
-        output.push(logic(radius[i]))
-    
-    }
-    return output
-}
-
-console.log(calculate(radius, area));
-console.log(calculate(radius,circumference))
-console.log(calculate(radius, diameter))
+let double = multiply(2);
+console.log(double(5)); // 10
