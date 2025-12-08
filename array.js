@@ -1,5 +1,9 @@
 //array
-//array is a collection of items stored at contiguous memory locations.
+//array are collection of multiple data which is stored in a single variable
+//elements can be added or remove
+//each and every index has its own index number starting from 0
+//array can store multiple data types
+//array are mutable(can be changed)
 //it is an data structure
 //it is an object
 //it is an iterable
